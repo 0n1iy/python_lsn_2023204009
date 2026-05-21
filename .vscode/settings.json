@@ -1,0 +1,14 @@
+{
+    "python.defaultInterpreterPath": "G:/pytorch/python.exe",
+    "python.terminal.activateEnvironment": false,
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "files.encoding": "utf8",
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/*.pyc": true,
+        "build": true,
+        "dist": true
+    },
+    "python.analysis.typeCheckingMode": "off"
+}

@@ -1,0 +1,195 @@
+/* PID温度控制仿真系统 - Qt样式表 */
+
+/* ===== 全局默认 ===== */
+QWidget {
+    color: #1a1a1a;
+    font-size: 13px;
+}
+
+QMainWindow {
+    background-color: #f0f0f0;
+}
+
+QDialog {
+    background-color: #f0f0f0;
+}
+
+/* ===== 分组框 ===== */
+QGroupBox {
+    font-weight: bold;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    margin-top: 8px;
+    padding-top: 14px;
+    background-color: #f8f8f8;
+    color: #1a1a1a;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 10px;
+    padding: 0 6px;
+    color: #1a1a1a;
+}
+
+/* ===== 标签 ===== */
+QLabel {
+    color: #1a1a1a;
+    background: transparent;
+}
+
+/* ===== 复选框 ===== */
+QCheckBox {
+    color: #1a1a1a;
+    spacing: 6px;
+}
+
+QCheckBox::indicator {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #999999;
+    border-radius: 3px;
+    background-color: white;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #0078d4;
+    border-color: #0078d4;
+}
+
+QCheckBox::indicator:hover {
+    border-color: #0078d4;
+}
+
+/* ===== 按钮 ===== */
+QPushButton {
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 14px;
+    min-width: 60px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #106ebe;
+}
+
+QPushButton:pressed {
+    background-color: #005a9e;
+}
+
+QPushButton:disabled {
+    background-color: #d0d0d0;
+    color: #999999;
+}
+
+/* ===== 输入框 ===== */
+QLineEdit, QDoubleSpinBox, QSpinBox, QComboBox {
+    border: 1px solid #bbbbbb;
+    border-radius: 3px;
+    padding: 4px 6px;
+    background-color: white;
+    color: #1a1a1a;
+}
+
+QLineEdit:focus, QDoubleSpinBox:focus, QSpinBox:focus, QComboBox:focus {
+    border-color: #0078d4;
+    border-width: 2px;
+}
+
+/* ===== 下拉框 ===== */
+QComboBox::drop-down {
+    border: none;
+    padding-right: 6px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: white;
+    color: #1a1a1a;
+    selection-background-color: #0078d4;
+    selection-color: white;
+    border: 1px solid #cccccc;
+}
+
+/* ===== 状态栏 ===== */
+QStatusBar {
+    background-color: #e8e8e8;
+    border-top: 1px solid #cccccc;
+    padding: 3px;
+    color: #1a1a1a;
+}
+
+QStatusBar QLabel {
+    color: #1a1a1a;
+}
+
+/* ===== 菜单栏 ===== */
+QMenuBar {
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #cccccc;
+    color: #1a1a1a;
+}
+
+QMenuBar::item {
+    color: #1a1a1a;
+    padding: 4px 10px;
+}
+
+QMenuBar::item:selected {
+    background-color: #0078d4;
+    color: white;
+}
+
+QMenu {
+    background-color: white;
+    border: 1px solid #cccccc;
+}
+
+QMenu::item {
+    color: #1a1a1a;
+    padding: 5px 30px;
+}
+
+QMenu::item:selected {
+    background-color: #0078d4;
+    color: white;
+}
+
+/* ===== 滚动区域 ===== */
+QScrollArea {
+    border: none;
+    background-color: #f0f0f0;
+}
+
+QScrollArea > QWidget > QWidget {
+    background-color: #f0f0f0;
+}
+
+/* ===== 表格 ===== */
+QTableWidget {
+    gridline-color: #e0e0e0;
+    background-color: white;
+    color: #1a1a1a;
+    selection-background-color: #0078d4;
+    selection-color: white;
+}
+
+QHeaderView::section {
+    background-color: #e8e8e8;
+    border: 1px solid #cccccc;
+    padding: 5px;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+/* ===== 提示文本 ===== */
+QLineEdit::placeholder {
+    color: #aaaaaa;
+}
+
+/* ===== 分隔线 ===== */
+QFrame[frameShape="4"], QFrame[frameShape="5"] {
+    color: #cccccc;
+}
