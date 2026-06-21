@@ -82,8 +82,11 @@ class TempConfig:
 
     # 参数范围
     KP_MIN = 0.0
+    KP_MAX = 100.0
     TI_MIN = 0.01
+    TI_MAX = 100.0
     TD_MIN = 0.0
+    TD_MAX = 50.0
 
 
 class Paths:

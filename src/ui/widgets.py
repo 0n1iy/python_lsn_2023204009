@@ -25,7 +25,7 @@ class PIDParamGroup(QGroupBox):
 
         layout.addWidget(QLabel("Kp:"), 0, 0)
         self._kp_spin = QDoubleSpinBox()
-        self._kp_spin.setRange(TempConfig.KP_MIN, 9999.0)
+        self._kp_spin.setRange(TempConfig.KP_MIN, TempConfig.KP_MAX)
         self._kp_spin.setDecimals(2)
         self._kp_spin.setValue(TempConfig.PID_KP_DEFAULT)
         self._kp_spin.setSingleStep(0.1)
@@ -34,7 +34,7 @@ class PIDParamGroup(QGroupBox):
 
         layout.addWidget(QLabel("Ti:"), 0, 2)
         self._ti_spin = QDoubleSpinBox()
-        self._ti_spin.setRange(TempConfig.TI_MIN, 9999.0)
+        self._ti_spin.setRange(TempConfig.TI_MIN, TempConfig.TI_MAX)
         self._ti_spin.setDecimals(2)
         self._ti_spin.setValue(TempConfig.PID_TI_DEFAULT)
         self._ti_spin.setSingleStep(0.1)
@@ -43,7 +43,7 @@ class PIDParamGroup(QGroupBox):
 
         layout.addWidget(QLabel("Td:"), 0, 4)
         self._td_spin = QDoubleSpinBox()
-        self._td_spin.setRange(TempConfig.TD_MIN, 9999.0)
+        self._td_spin.setRange(TempConfig.TD_MIN, TempConfig.TD_MAX)
         self._td_spin.setDecimals(2)
         self._td_spin.setValue(TempConfig.PID_TD_DEFAULT)
         self._td_spin.setSingleStep(0.1)

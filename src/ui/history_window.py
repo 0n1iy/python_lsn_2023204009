@@ -3,7 +3,7 @@
 from datetime import datetime, timedelta
 
 from PyQt6.QtWidgets import (
-    QWidget, QVBoxLayout, QHBoxLayout, QPushButton, QLabel,
+    QDialog, QVBoxLayout, QHBoxLayout, QPushButton, QLabel,
     QDateTimeEdit, QTableWidget, QTableWidgetItem, QFileDialog,
     QMessageBox, QSplitter, QHeaderView
 )
@@ -14,7 +14,7 @@ from src.utils.excel_exporter import export_to_excel
 from src.ui.plot_widget import HistoryPlotWidget
 
 
-class HistoryWindow(QWidget):
+class HistoryWindow(QDialog):
     """历史数据查询窗口"""
 
     def __init__(self, parent=None):

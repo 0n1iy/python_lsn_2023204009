@@ -155,6 +155,7 @@ class MainWindow(QMainWindow):
         self._manual_spin.setDecimals(2)
         self._manual_spin.setValue(0.0)
         self._manual_spin.setEnabled(False)
+        self._manual_spin.setKeyboardTracking(False)
         self._manual_spin.valueChanged.connect(self._on_manual_value_changed)
         manual_layout.addWidget(self._manual_spin)
         sim_layout.addLayout(manual_layout)
@@ -305,7 +306,6 @@ class MainWindow(QMainWindow):
 
         is_manual = mode == ControlMode.MANUAL
         self._manual_spin.setEnabled(is_manual)
-        self._sv_spin.setEnabled(not is_manual)
 
         if is_manual:
             self._status_bar.update_status("手动模式")

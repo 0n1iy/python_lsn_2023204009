@@ -32,6 +32,15 @@ class SimplePIDController:
         self._output = p_term + i_term + d_term
         return self._output
 
+    def track_output(self, manual_output: float):
+        """无扰动切换 - 跟踪手动输出值，调整积分项"""
+        if self.kp != 0 and self.ti > 0:
+            self._integral = (manual_output / self.kp) * self.ti
+        else:
+            self._integral = 0.0
+        self._output = manual_output
+        self._prev_error = 0.0
+
     @property
     def integral(self) -> float:
         return self._integral

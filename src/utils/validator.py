@@ -12,10 +12,16 @@ def validate_pid_params(kp: float, ti: float, td: float) -> Optional[str]:
     """
     if kp < TempConfig.KP_MIN:
         return f"Kp 不能为负数（当前值: {kp}）"
+    if kp > TempConfig.KP_MAX:
+        return f"Kp 超出上限（当前值: {kp}，上限: {TempConfig.KP_MAX}）"
     if ti < TempConfig.TI_MIN:
         return f"Ti 必须大于0（当前值: {ti}）"
+    if ti > TempConfig.TI_MAX:
+        return f"Ti 超出上限（当前值: {ti}，上限: {TempConfig.TI_MAX}）"
     if td < TempConfig.TD_MIN:
         return f"Td 不能为负数（当前值: {td}）"
+    if td > TempConfig.TD_MAX:
+        return f"Td 超出上限（当前值: {td}，上限: {TempConfig.TD_MAX}）"
     return None
 
 
